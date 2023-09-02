@@ -1,13 +1,11 @@
 export default `
   body {
-    font-family: "Input Mono", "DejaVu Sans Mono", DejaVu, Arial, sans-serif;
-    font-size: 12pt;
+    font-family: "Iosevka", monospace;
+    font-size: 10pt;
   }
 
   #sk_keystroke kbd {
-    font-family: "Sudo Nerd Font Mono", "Sudo Mono", "Sudo",
-      "Input Mono Nerd Font", "Input Mono", "DejaVu Sans Mono", "DejaVu", "Arial",
-      sans-serif;
+    font-family: "Iosevka", monospace;
     font-size: 10pt;
   }
 
