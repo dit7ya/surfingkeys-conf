@@ -6,7 +6,7 @@ import util from "./util.js"
 
 const { categories } = help
 
-const { Clipboard, Front } = api
+const { Clipboard, Front, Normal } = api
 
 // Remove undesired default mappings
 const unmaps = {
@@ -53,6 +53,17 @@ const unmaps = {
 const maps = {}
 
 maps.global = [
+  {
+    alias: "<Ctrl-d>",
+    description: "Scroll down half page",
+    callback: () => Normal.scroll("pageDown"),
+  },
+
+  {
+    alias: "<Ctrl-u>",
+    description: "Scroll up half page",
+    callback: () => Normal.scroll("pageUp"),
+  },
   {
     alias: "d",
     callback: actions.closeTab,
